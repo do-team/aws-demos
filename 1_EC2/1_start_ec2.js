@@ -7,6 +7,7 @@ AWS.config.update({region: 'eu-central-1'});
 // Create EC2 service object
 var ec2 = new AWS.EC2({apiVersion: '2016-11-15'});
 
+var userData = "#!/bin/bash\n" + "sudo yum update -y\n" + "yum install -y httpd\n" + "service httpd start\n";
 
 var params = {
     ImageId: 'ami-82be18ed',
@@ -15,7 +16,11 @@ var params = {
     MaxCount: 1,
     KeyName: 'zu697-0451.pem',
     SecurityGroupIds: ['sg-32fbb75a'],
-    SubnetId: 'subnet-9e6f97e4'
+    SubnetId: 'subnet-9e6f97e4',
+    UserData: userData.toString('BASE64'),
+    IamInstanceProfile: {
+        Name: 'zu697-IMTdynamo'
+    }
 };
 
 // Create the instance

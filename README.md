@@ -9,4 +9,7 @@ Various AWS demos for more technical audience.
 **Discover and Stop** - pass *application name* as parameter (`node 3_discover_stop.js Bazinga`), utilize tagging strategy to control your environment.  
 **Discover and Start** - the same as above, but starting instance instead of stopping.  
 
-# 2. 
+# 2. S3
+
+Upload files and folders to predefined S3 bucket. Just run `node main.js` to see more command line arguments.
+
