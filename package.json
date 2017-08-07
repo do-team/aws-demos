@@ -1,0 +1,9 @@
+{
+  "name": "aws-demos",
+  "version": "0.0.1",
+  "private": true,
+  "license": "none",
+  "dependencies": {
+    "aws-sdk": "*"
+  }
+}
