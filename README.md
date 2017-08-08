@@ -14,7 +14,10 @@ Various AWS demos for more technical audience.
 
 Upload files and folders to predefined S3 bucket. Just run `node main.js` to see more command line arguments.
 
-# 3. Loadbalancer
+# 3. Ansible
 
-# 4. VPC
+Configure your running EC2 instance by installing `httpd` and changing state from `started` to `stopped`.
 
+# 4. KMS
+
+Example bucket policy to force encryption of the content of S3 bucket.
