@@ -1,6 +1,7 @@
 # AWS Demos
 ===========
-Various AWS demos for more technical audience.
+
+Various AWS demos for more technical audience.  
 
 # 1. EC2
 
@@ -12,4 +13,8 @@ Various AWS demos for more technical audience.
 # 2. S3
 
 Upload files and folders to predefined S3 bucket. Just run `node main.js` to see more command line arguments.
+
+# 3. Loadbalancer
+
+# 4. VPC
 
