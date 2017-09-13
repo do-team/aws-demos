@@ -45,6 +45,7 @@ jobs:
           name: Run Playbook if in master branch
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              export ANSIBLE_HOST_KEY_CHECKING=False
               ansible-playbook -i ~/aws-demos/3_Ansible/hosts ~/aws-demos/3_Ansible/playbook.yml -u ec2-user
             else
               echo "Not master branch so not deploying!"
