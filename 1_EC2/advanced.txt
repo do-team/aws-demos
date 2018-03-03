@@ -3,3 +3,5 @@ yum update -y
 yum install -y httpd
 service httpd start
 chkconfig httpd on
+git clone https://github.com/do-team/aws-demos
+cd aws-demos
