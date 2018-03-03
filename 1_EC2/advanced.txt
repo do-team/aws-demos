@@ -1,7 +1,10 @@
 #!/bin/bash
+set -x
 yum update -y
 yum install -y httpd
 service httpd start
 chkconfig httpd on
+cd /home/ec2-user
 git clone https://github.com/do-team/aws-demos
-cd aws-demos
+cd aws-demos/5_DynamoDB
+/home/ec2-user/.nvm/versions/node/v6.11.5/bin/node /home/ec2-user/aws-demos/5_DynamoDB/indexec2.js
