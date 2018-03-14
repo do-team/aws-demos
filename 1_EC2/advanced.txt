@@ -4,6 +4,7 @@ yum update -y
 yum install -y httpd
 service httpd start
 chkconfig httpd on
+yum install -y git
 cd /home/ec2-user
 git clone https://github.com/do-team/aws-demos
 cd aws-demos/5_DynamoDB
