@@ -1,0 +1,11 @@
+#!/bin/bash
+set -x
+yum install epel-release
+yum update -y
+yum install nginx -y
+nginx
+yum install -y git
+cd /home/ec2-user
+git clone https://github.com/do-team/aws-demos
+cd aws-demos/5_DynamoDB
+/home/ec2-user/.nvm/versions/node/v6.11.5/bin/node /home/ec2-user/aws-demos/5_DynamoDB/indexec2.js
