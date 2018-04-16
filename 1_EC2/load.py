@@ -14,5 +14,6 @@ def f(x):
 if __name__ == '__main__':
     processes = cpu_count()
     print 'utilizing %d cores\n' % processes
+    print 'To quit press CTRL + Z'
     pool = Pool(processes)
     pool.map(f, range(processes))
