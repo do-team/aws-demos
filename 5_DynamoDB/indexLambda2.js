@@ -44,6 +44,10 @@ exports.handler = (event, context, callback) =>
       console.error("Unable to write item. Error JSON:", JSON.stringify(err, null, 2));
     } else {
       console.log("PutItem succeeded!");
+      let response = {
+        "user":randomUsername
+      }
+      callback(null, response)
     }
   });
 
