@@ -1,5 +1,4 @@
-
-var BUCKET_NAME = 'zu697-aws-demos';
+var BUCKET_NAME = 'yourbucketname';
 
 var fs = require('fs');
 
