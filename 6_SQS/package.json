@@ -1,0 +1,15 @@
+{
+  "name": "sqs_demo",
+  "version": "0.0.1",
+  "description": "Simple demo of creating and consuming SQS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Kubec",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.0.1",
+    "aws-sdk": "*"
+  }
+}
