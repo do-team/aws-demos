@@ -53,7 +53,7 @@ function processQueue(){
       return new Promise((resolve) => {
         processedMessages++
         // Simulating processing of the data (contacting database etc.), 100 ms for the demonstration
-        setTimeout(() => resolve(data), 100)
+        setTimeout(() => resolve(data), 50)
       })
     }
   }
