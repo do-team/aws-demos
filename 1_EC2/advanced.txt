@@ -1,6 +1,4 @@
 #!/bin/bash
 set -x
-yum install epel-release
-yum update -y
-yum install nginx -y
+amazon-linux-extras install nginx1.12 -y
 nginx
