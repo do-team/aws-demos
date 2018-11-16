@@ -1,5 +1,5 @@
 ---
-- name: install webserver1
+- name: install webserver
   hosts: all
   become: true
   tasks:
@@ -8,5 +8,5 @@
         state: latest
     - service:
         name: httpd
-        state: started
+        state: stopped
         enabled: true
